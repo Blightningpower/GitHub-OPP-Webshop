@@ -1,0 +1,72 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Webshop_opp
+build_property.RootNamespace = Webshop_opp
+build_property.ProjectDir = C:\Users\Bavli Armanyous\OneDrive - Office 365 Fontys\ICT\Semester 1\Verdieping\4. Realisatie\Webshop_OPP\OPP-Webshop\Webshop_opp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Bavli Armanyous\OneDrive - Office 365 Fontys\ICT\Semester 1\Verdieping\4. Realisatie\Webshop_OPP\OPP-Webshop\Webshop_opp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Account/ChangeAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Account/CreateAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGVBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Product_admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdF9hZG1pblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Shop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Shop/MakeOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxNYWtlT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Shop/ShopingCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaG9waW5nQ2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bavli Armanyous/OneDrive - Office 365 Fontys/ICT/Semester 1/Verdieping/4. Realisatie/Webshop_OPP/OPP-Webshop/Webshop_opp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wm58m6ipcf

@@ -1,0 +1,28 @@
+﻿@model Webshop_opp.ViewModels.AccountViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="post" asp-page-handler="category_created" enctype="multipart/form-data">
+    <h2>@ViewBag.messege</h2>
+            <p>Postcode: </p>
+            @Html.TextBoxFor(model => model.postalCode)
+            @Html.ValidationMessageFor(model => model.postalCode)<br>
+            <p>Straat: </p>
+            @Html.TextBoxFor(model => model.street)
+            @Html.ValidationMessageFor(model => model.street)<br>
+            <p>Huisnummer</p>
+            @Html.TextBoxFor(model => model.houseNumber)
+            @Html.ValidationMessageFor(model => model.houseNumber)<br>
+            <p>Stad: </p>
+            @Html.TextBoxFor(model => model.city)
+            @Html.ValidationMessageFor(model => model.city)<br>
+            <p>Land: </p>
+            @Html.TextBoxFor(model => model.country)
+            @Html.ValidationMessageFor(model => model.country)<br>
+            <p>Provincie: </p>
+            @Html.TextBoxFor(model => model.province)
+            @Html.ValidationMessageFor(model => model.province)<br>      
+            <button asp-action="order" class="btn btn-default">Bestelling plaatsen</button>
+        </form>

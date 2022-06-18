@@ -1,0 +1,23 @@
+﻿@model Webshop_opp.ViewModels.AccountViewModel
+@{
+
+}
+@*<title @ViewData["Title"] - OPP Inloggen</title>*@
+
+<link rel="stylesheet" href="~/css/site.css"/></link>
+
+<center>
+     <img src="~/css/Logo.png" id="logo" />
+	 
+<div class="text-center">
+    <h3>@ViewBag.message</h3>
+    <form method="post" asp-page-handler="category_created" enctype="multipart/form-data">         
+         <p>Email: </p>
+         @Html.TextBoxFor(model => model.email)
+         @Html.ValidationMessageFor(model => model.email)<br>
+         <p>Wachtwoord: </p>
+         @Html.PasswordFor(model => model.password)
+         @Html.ValidationMessageFor(model => model.password)<br><br>          
+         <button asp-action="login_account" class="btn btn-default">Inloggen</button>
+     </form>   
+</div>

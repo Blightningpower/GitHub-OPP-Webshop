@@ -1,0 +1,86 @@
+﻿@model Webshop_opp.ViewModels.AccountViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css"/></link>
+@*<button class="buttonGoBack"><a href="~/Account/Login.cshtml/" class="buttonGoBack_text">Ga terug</a></button>*@
+<center>
+<div class="pageBorder">
+    <h2>Vul je gegevens in</h2>
+    <br>
+    <h3>@ViewBag.message</h3>
+
+<table>
+
+<thead>
+
+<tr>
+<td><p class="formInputName">Voornaam: </p>
+        @Html.TextBoxFor(model => model.firstName, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "formInputBar"})<br></td>
+<td><p class="formInputName">Land: </p>
+        @Html.TextBoxFor(model => model.country, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.country, "", new { @class = "formInputBar"})<br></td>
+</tr>
+
+<tr>
+<td><p class="formInputName">Tussenvoegsel: </p>
+        @Html.TextBoxFor(model => model.middleName, "", new { @class = "formInputBar"})
+        @*@Html.ValidationMessageFor(model => model.middleName)<br>*@</td>
+<td><p class="formInputName">Provincie: </p>
+        @Html.TextBoxFor(model => model.province, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.province, "", new { @class = "formInputBar"})<br></td>
+</tr>
+
+</thead>
+<tbody>
+
+<tr>
+<td><p class="formInputName">Achternaam: </p>
+        @Html.TextBoxFor(model => model.lastName, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "formInputBar"})<br></td>
+<td><p class="formInputName">Straat: </p>
+        @Html.TextBoxFor(model => model.street, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.street, "", new { @class = "formInputBar"})<br></td>
+</tr>
+
+<tr>
+<td><p class="formInputName">E-mailadres: </p>
+        @Html.TextBoxFor(model => model.email, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.email, "", new { @class = "formInputBar"})<br></td>
+<td><p class="formInputName">Huisnummer</p>
+        @Html.TextBoxFor(model => model.houseNumber, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.houseNumber, "", new { @class = "formInputBar"})<br></td>
+</tr>
+
+</tbody>
+<tfoot>
+
+<tr>
+<td><p class="formInputName">Telefoonnummer: </p>
+        @Html.TextBoxFor(model => model.phoneNumber, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.phoneNumber, "", new { @class = "formInputBar"})<br></td>
+<td><p class="formInputName">Postcode: </p>
+        @Html.TextBoxFor(model => model.postalCode, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.postalCode, "", new { @class = "formInputBar"})<br></td>
+</tr>
+
+<tr>
+<td><p class="formInputName">Wachtwoord: </p>
+        @Html.PasswordFor(model => model.password,  new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.password, "", new { @class = "formInputBar"})<br></td>
+<td><p class="formInputName">Stad: </p>
+        @Html.TextBoxFor(model => model.city, "", new { @class = "formInputBar"})
+        @Html.ValidationMessageFor(model => model.city, "", new { @class = "formInputBar"})<br></td>
+</tr>
+
+</tfoot>
+
+</table>
+
+<br><button asp-action="create_account" class="btn btn-default">Account Aanmaken</button>
+
+</div>
+</center>

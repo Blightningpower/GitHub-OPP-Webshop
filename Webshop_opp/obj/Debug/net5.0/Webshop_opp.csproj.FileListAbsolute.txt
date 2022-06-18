@@ -1,0 +1,9 @@
+C:\Users\Cédric\OneDrive - Office 365 Fontys\Bureaublad\school\Talk to me\Webshop_opp\Webshop_opp\obj\Debug\net5.0\Webshop_opp.csproj.AssemblyReference.cache
+C:\Users\Cédric\OneDrive - Office 365 Fontys\Bureaublad\school\Talk to me\Webshop_opp\Webshop_opp\obj\Debug\net5.0\Webshop_opp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cédric\OneDrive - Office 365 Fontys\Bureaublad\school\Talk to me\Webshop_opp\Webshop_opp\obj\Debug\net5.0\Webshop_opp.AssemblyInfoInputs.cache
+C:\Users\Cédric\OneDrive - Office 365 Fontys\Bureaublad\school\Talk to me\Webshop_opp\Webshop_opp\obj\Debug\net5.0\Webshop_opp.AssemblyInfo.cs
+C:\Users\Cédric\OneDrive - Office 365 Fontys\Bureaublad\school\Talk to me\Webshop_opp\Webshop_opp\obj\Debug\net5.0\Webshop_opp.csproj.CoreCompileInputs.cache
+C:\Users\Cédric\OneDrive - Office 365 Fontys\Bureaublad\school\Talk to me\Webshop_opp\Webshop_opp\obj\Debug\net5.0\Webshop_opp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Cédric\OneDrive - Office 365 Fontys\Bureaublad\school\Talk to me\Webshop_opp\Webshop_opp\obj\Debug\net5.0\Webshop_opp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Cédric\OneDrive - Office 365 Fontys\Bureaublad\school\Talk to me\Webshop_opp\Webshop_opp\obj\Debug\net5.0\Webshop_opp.RazorAssemblyInfo.cache
+C:\Users\Cédric\OneDrive - Office 365 Fontys\Bureaublad\school\Talk to me\Webshop_opp\Webshop_opp\obj\Debug\net5.0\Webshop_opp.RazorAssemblyInfo.cs

@@ -1,0 +1,92 @@
+﻿@model Webshop_opp.ViewModels.AdminProductViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center">
+    <h3>@ViewBag.message</h3>
+     <form method="post">
+        <button asp-action="create_product" class="btn btn-default">Product aanmaken</button><br />
+
+        <button asp-action="edit_product" class="btn btn-default">Product aampassen</button><br />
+
+        <button asp-action="delete_product" class="btn btn-default">Product verwijderen</button><br />
+
+        <button asp-action="create_category" class="btn btn-default">Categorie aanmaken</button><br />
+
+        <button asp-action="delete_category" class="btn btn-default">Categorie verwijderen</button><br />
+    </form>
+    @if (ViewBag.ButtonClicked == "create_category")
+    {
+        <form method="post" asp-page-handler="category_created">
+            @Html.TextBoxFor(model => model.Category_name_input)
+            @Html.ValidationMessageFor(model => model.Category_name_input)
+            <button asp-action="category_create" class="btn btn-default">Categorie Aanmaken</button>
+        </form>
+   }
+   @if (ViewBag.ButtonClicked == "delete_category")
+   {
+        <form method="post" asp-page-handler="category_delete">
+            
+            <div>
+                <select name="categoryName">
+                    @for (var i = 0; i < @Model.Categories.Count; i++)
+                    {                   
+                        <option value="@Model.Categories[i].CategoryId">@Model.Categories[i].CategoryName</option>                  
+                    }            
+                </select>
+            </div>
+            <button asp-action="category_delete" class="btn btn-default">Categorie Verwijderen</button>
+        </form>
+   }
+
+   @if (ViewBag.ButtonClicked == "create_product")
+   {
+        <form method="post" asp-page-handler="category_created" enctype="multipart/form-data">
+            <p>Product naam: </p>
+            @Html.TextBoxFor(model => model.Product_name_input)
+            @Html.ValidationMessageFor(model => model.Product_name_input)<br>
+            <p>Product beschrijving: </p>
+            @Html.TextBoxFor(model => model.Product_description_input)
+            @Html.ValidationMessageFor(model => model.Product_description_input)<br>
+            <p>Product prijs: </p>
+            @Html.TextBoxFor(model => model.Product_price_input)
+            @Html.ValidationMessageFor(model => model.Product_price_input)<br>
+            <p>Product hoogte: </p>
+            @Html.TextBoxFor(model => model.Product_height_input)
+            @Html.ValidationMessageFor(model => model.Product_height_input)<br>
+            <p>Product breete: </p>
+            @Html.TextBoxFor(model => model.Product_width_input)
+            @Html.ValidationMessageFor(model => model.Product_width_input)<br>
+            <p>Gewicht product</p>
+            @Html.TextBoxFor(model => model.Product_weight_input)
+            @Html.ValidationMessageFor(model => model.Product_weight_input)<br>
+            <p>Categorie: </p>
+            <select name="categoryName">
+                @for (var i = 0; i < @Model.Categories.Count; i++)
+                {                   
+                    <option value="@Model.Categories[i].CategoryId">@Model.Categories[i].CategoryName</option>                  
+                }            
+            </select><br>
+            <input type="file" name="file" />
+            
+            <button asp-action="product_create" class="btn btn-default">Product Aanmaken</button>
+        </form>
+        
+   }
+    
+   @if (ViewBag.ButtonClicked == "delete_product")
+   {           
+        <div>
+            <select name="productName">
+                @for (var i = 0; i < @Model.Products.Count; i++)
+                {                   
+                    <option value="@Model.Products[i].ProductId">@Model.Products[i].ProductName</option>                  
+                }            
+            </select>
+        </div>
+        <form method="post" asp-page-handler="product_delete">
+            <button asp-action="add_product" name="button" class="btn btn-default">Product Verwijderen</button>
+        </form>
+   }  
+</div> 

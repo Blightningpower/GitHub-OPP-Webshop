@@ -1,0 +1,33 @@
+﻿@model Webshop_opp.ViewModels.AdminProductViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+@{
+    ViewData["Title"] = "Webshop";
+}
+
+<link rel="stylesheet" href="~/css/site.css"/></link>
+
+<div class="text-center">
+    <h1 class="display-4">Ons Assortiment</h1>
+</div>
+
+
+<table>
+    @for (var i = 0; i < @Model.Products.Count; i++)
+    {   
+        <tr>
+            <td> 
+                <img src="Images/@Model.Products[i].Product_image" width="250px" />
+                <p>@Model.Products[i].ProductName</p>
+                <p>@Model.Products[i].Product_description</p>
+                <form method="post" asp-page-handler="add_product">
+                    <button asp-action="add_product" class="btn btn-default" value="@Model.Products[i].ProductId" name="button" >Toevoegen aan winkelmandje</button>
+                </form>
+            </td>
+        </tr>
+    }  
+</table>
