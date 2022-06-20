@@ -16,18 +16,18 @@
 </div>
 
 
-<table>
+
     @for (var i = 0; i < @Model.Products.Count; i++)
     {   
-        <tr>
-            <td> 
+        
+            <div class="flexProducts"> 
                 <img src="Images/@Model.Products[i].Product_image" width="250px" />
                 <p>@Model.Products[i].ProductName</p>
-                <p>@Model.Products[i].Product_description</p>
+                <p>@Model.Products[i].Product_description</p><br>
                 <form method="post" asp-page-handler="add_product">
                     <button asp-action="add_product" class="btn btn-default" value="@Model.Products[i].ProductId" name="button" >Toevoegen aan winkelmandje</button>
                 </form>
-            </td>
-        </tr>
+            </div>
+       
     }  
-</table>
+

@@ -1,7 +1,5 @@
 
 /*code applied to whole webshop*/
-
-
 html {
     font-size: 14px;
     position: relative;
@@ -19,55 +17,79 @@ body {
     margin-bottom: 60px;
 }
 
-.li{
-    border: 2 px solid black;
-    border-radius: 25 px;
-    background-color: black;
-
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #00A6FF;
+    
+    
 }
+
+    .flex-container > div {
+        background-color: black;
+        margin: 10px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 25px;
+        padding:0px;
+    }
+
+.flexProducts {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #00A6FF;
+}
+
+    .flexProducts > div {
+        background-color: black;
+        margin: 10px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 25px;
+        padding: 0px;
+    }
+
+.navitem {
+    display: inline;
+}
+
+.nav-itemText {
+    color: white !important;
+    font-family: bold, Impact;
+    font-size: 18px !important;
+    align-content: center;
+}
+
+.nav-link {
+    display: inline;
+}
+
+
 .box-shadow {
     background: #00A6FF !important;
+   
 }
-
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-.tableFig {
-    align-content: baseline;
-    background-color: #FFDF39;
-    color: #fffff;
-    border: 3px solid black;
-    border-radius: 30 px;
-    position: absolute;
-    left: 100 px;
-}
-
-
 
 .container-fluid {
     background-color: #00A6FF;
-    line-height: 250%;
+    border: 1px solid black;
 }
 
-a.navbar-brand {
+div.container-fluid {
     white-space: normal;
-    text-align: center;
     word-break: break-all;
+    line-height:60px;
 }
 
-a {
-    color: #ffffff;
+.nav-shoppingCart {
+    position: absolute;
+    right: 30px;
+    top: 15px;
 }
 
-.btn-primary {
+    .btn-primary {
     color: #000000;
     background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #00A6FF;
-    background-color: #00A6FF;
     border-color: #1861ac;
 }
 
@@ -95,6 +117,7 @@ button.accept-policy {
     white-space: nowrap;
     line-height: 300 %;
     background-color: #00A6FF;
+    border: 1px solid black;
 }
 /*
 code applied to log-in page*/
@@ -110,6 +133,7 @@ code applied to log-in page*/
 .textbox {
     width: 30%;
     border-radius: 25px;
+    background-color: #00A6FF;
 }
 
 .buttonLogIn {
@@ -154,11 +178,16 @@ code applied to sign-up page*/
 .buttonSignIn_text {
 }
 
-
+.formInputBar {
+    width: 210px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
 
 .formInputName {
     font-family: Bold, Verdana;
-    margin-bottom: auto
+    margin-bottom: auto;
+    font-size: 12px;
 }
 
 .btn.btn-default {

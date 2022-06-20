@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aVqxBUM+TpAEISfKs/rB+AP/H9WNkTynro/GCJzkihQ=",
+  "Hash": "e0d0eCqENHDpViueLG+Bnfbd22jjS7ySy4e6rRLH4mM=",
   "Source": "Webshop_opp",
   "BasePath": "_content/Webshop_opp",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Logo 2.5 cut.png"
+    },
+    {
+      "Identity": "C:\\Users\\Bavli Armanyous\\OneDrive - Office 365 Fontys\\ICT\\Semester 1\\Verdieping\\4. Realisatie\\Webshop_OPP\\OPP-Webshop\\Webshop_opp\\wwwroot\\img\\shoppinCartIcon.png",
+      "SourceId": "Webshop_opp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bavli Armanyous\\OneDrive - Office 365 Fontys\\ICT\\Semester 1\\Verdieping\\4. Realisatie\\Webshop_OPP\\OPP-Webshop\\Webshop_opp\\wwwroot\\",
+      "BasePath": "_content/Webshop_opp",
+      "RelativePath": "img/shoppinCartIcon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shoppinCartIcon.png"
     },
     {
       "Identity": "C:\\Users\\Bavli Armanyous\\OneDrive - Office 365 Fontys\\ICT\\Semester 1\\Verdieping\\4. Realisatie\\Webshop_OPP\\OPP-Webshop\\Webshop_opp\\wwwroot\\js\\site.js",

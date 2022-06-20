@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="~/css/site.css"/></link>
 @*<button class="buttonGoBack"><a href="~/Account/Login.cshtml/" class="buttonGoBack_text">Ga terug</a></button>*@
 <center>
-<div class="pageBorder">
+<div>
     <h2>Vul je gegevens in</h2>
     <br>
     <h3>@ViewBag.message</h3>
@@ -17,64 +17,60 @@
 <thead>
 
 <tr>
-<td><p class="formInputName">Voornaam: </p>
-        @Html.TextBoxFor(model => model.firstName, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "formInputBar"})<br></td>
-<td><p class="formInputName">Land: </p>
-        @Html.TextBoxFor(model => model.country, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.country, "", new { @class = "formInputBar"})<br></td>
+<td class="formInputBar"><p class="formInputName">Voornaam: </p>
+        @Html.TextBoxFor(model => model.firstName/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.firstName/*, "", new { @class = "formInputBar"}*/)</td>
+<td class="formInputBar"><p class="formInputName">Tussenvoegsel: </p>
+        @Html.TextBoxFor(model => model.middleName/*, "", new { @class = "formInputBar"}*/)
+        @*@Html.ValidationMessageFor(model => model.middleName)*@</td>
+<td class="formInputBar"><p class="formInputName">Achternaam: </p>
+        @Html.TextBoxFor(model => model.lastName/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.lastName/*, "", new { @class = "formInputBar"}*/)</td>
 </tr>
 
 <tr>
-<td><p class="formInputName">Tussenvoegsel: </p>
-        @Html.TextBoxFor(model => model.middleName, "", new { @class = "formInputBar"})
-        @*@Html.ValidationMessageFor(model => model.middleName)<br>*@</td>
-<td><p class="formInputName">Provincie: </p>
-        @Html.TextBoxFor(model => model.province, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.province, "", new { @class = "formInputBar"})<br></td>
+<td class="formInputBar"><p class="formInputName">E-mailadres: </p>
+        @Html.TextBoxFor(model => model.email/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.email/*, "", new { @class = "formInputBar"}*/)</td>
+<td class="formInputBar"><p class="formInputName">Telefoonnummer: </p>
+        @Html.TextBoxFor(model => model.phoneNumber/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.phoneNumber/*, "", new { @class = "formInputBar"}*/)</td>
 </tr>
 
 </thead>
 <tbody>
 
 <tr>
-<td><p class="formInputName">Achternaam: </p>
-        @Html.TextBoxFor(model => model.lastName, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "formInputBar"})<br></td>
-<td><p class="formInputName">Straat: </p>
-        @Html.TextBoxFor(model => model.street, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.street, "", new { @class = "formInputBar"})<br></td>
+<td class="formInputBar"><p class="formInputName">Land: </p>
+        @Html.TextBoxFor(model => model.country/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.country/*, "", new { @class = "formInputBar"}*/)</td>
+<td class="formInputBar"><p class="formInputName">Provincie: </p>
+        @Html.TextBoxFor(model => model.province/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.province/*, "", new { @class = "formInputBar"}*/)</td>
+<td class="formInputBar"><p class="formInputName">Stad: </p>
+        @Html.TextBoxFor(model => model.city/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.city/*, "", new { @class = "formInputBar"}*/)</td>
+<td class="formInputBar"><p class="formInputName">Straat: </p>
+        @Html.TextBoxFor(model => model.street/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.street/*, "", new { @class = "formInputBar"}*/)</td>
 </tr>
 
 <tr>
-<td><p class="formInputName">E-mailadres: </p>
-        @Html.TextBoxFor(model => model.email, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.email, "", new { @class = "formInputBar"})<br></td>
-<td><p class="formInputName">Huisnummer</p>
-        @Html.TextBoxFor(model => model.houseNumber, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.houseNumber, "", new { @class = "formInputBar"})<br></td>
+<td class="formInputBar"><p class="formInputName">Huisnummer (+toevoeging)</p>
+        @Html.TextBoxFor(model => model.houseNumber/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.houseNumber/*, "", new { @class = "formInputBar"}*/)</td>
+<td class="formInputBar"><p class="formInputName">Postcode: </p>
+        @Html.TextBoxFor(model => model.postalCode/*, "", new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.postalCode/*, "", new { @class = "formInputBar"}*/)</td>
 </tr>
 
 </tbody>
 <tfoot>
 
 <tr>
-<td><p class="formInputName">Telefoonnummer: </p>
-        @Html.TextBoxFor(model => model.phoneNumber, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.phoneNumber, "", new { @class = "formInputBar"})<br></td>
-<td><p class="formInputName">Postcode: </p>
-        @Html.TextBoxFor(model => model.postalCode, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.postalCode, "", new { @class = "formInputBar"})<br></td>
-</tr>
-
-<tr>
-<td><p class="formInputName">Wachtwoord: </p>
-        @Html.PasswordFor(model => model.password,  new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.password, "", new { @class = "formInputBar"})<br></td>
-<td><p class="formInputName">Stad: </p>
-        @Html.TextBoxFor(model => model.city, "", new { @class = "formInputBar"})
-        @Html.ValidationMessageFor(model => model.city, "", new { @class = "formInputBar"})<br></td>
-</tr>
+<td class="formInputBar"><p class="formInputName">Nieuw Wachtwoord: </p>
+        @Html.PasswordFor(model => model.password/*,  new { @class = "formInputBar"}*/)
+        @Html.ValidationMessageFor(model => model.password/*, "", new { @class = "formInputBar"}*/)</td>
 
 </tfoot>
 
